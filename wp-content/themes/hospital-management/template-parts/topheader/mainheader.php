@@ -10,20 +10,7 @@
 $hospital_management_sticky_header = get_theme_mod('hospital_management_sticky_header');
     $hospital_management_data_sticky = "true";
 ?>
-<!-- <style>
-    /* Sembunyikan header saat scroll ke bawah */
-.main-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  transition: top 0.3s; /* Efek transisi halus */
-  z-index: 1000;
-}
 
-.header-hidden {
-  top: -100px; /* Sesuaikan dengan tinggi header Anda */
-}
-</style> -->
 <div class="main-header text-center text-md-start">
     <div class="container">
         <div class="row nav-box">

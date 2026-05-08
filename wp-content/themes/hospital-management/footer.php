@@ -10,101 +10,63 @@
  */
 ?>
 
-<footer id="colophon" class="site-footer border-top">
+<footer id="colophon" class="site-footer border-top" style="background-color: #00923F;">
     <div class="container">
-    	<div class="footer-column">
-	      	<div class="row">
-		        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-		          	<?php if (is_active_sidebar('hospital-management-footer1')) : ?>
-                        <?php dynamic_sidebar('hospital-management-footer1'); ?>
-                    <?php else : ?>
-                        <aside id="search" class="widget" role="complementary" aria-label="<?php esc_attr_e( 'firstsidebar', 'hospital-management' ); ?>">
-                            <h5 class="widget-title"><?php esc_html_e( 'About Us', 'hospital-management' ); ?></h5>
-                            <div class="textwidget">
-                            	<p><?php esc_html_e( 'Nam malesuada nulla nisi, ut faucibus magna congue nec. Ut libero tortor, tempus at auctor in, molestie at nisi. In enim ligula, consequat eu feugiat a.', 'hospital-management' ); ?></p>
-                            </div>
-                        </aside>
-                    <?php endif; ?>
-		        </div>
-		        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-		            <?php if (is_active_sidebar('hospital-management-footer2')) : ?>
-                        <?php dynamic_sidebar('hospital-management-footer2'); ?>
-                    <?php else : ?>
-                        <aside id="pages" class="widget">
-                            <h5 class="widget-title"><?php esc_html_e( 'Useful Links', 'hospital-management' ); ?></h5>
-                            <ul class="mt-4">
-                            	<li><?php esc_html_e( 'Home', 'hospital-management' ); ?></li>
-                            	<li><?php esc_html_e( 'Tournaments', 'hospital-management' ); ?></li>
-                            	<li><?php esc_html_e( 'Reviews', 'hospital-management' ); ?></li>
-                            	<li><?php esc_html_e( 'About Us', 'hospital-management' ); ?></li>
-                            </ul>
-                        </aside>
-                    <?php endif; ?>
-		        </div>
-		        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-		            <?php if (is_active_sidebar('hospital-management-footer3')) : ?>
-                        <?php dynamic_sidebar('hospital-management-footer3'); ?>
-                    <?php else : ?>
-                        <aside id="pages" class="widget">
-                            <h5 class="widget-title"><?php esc_html_e( 'Information', 'hospital-management' ); ?></h5>
-                            <ul class="mt-4">
-                            	<li><?php esc_html_e( 'FAQ', 'hospital-management' ); ?></li>
-                            	<li><?php esc_html_e( 'Site Maps', 'hospital-management' ); ?></li>
-                            	<li><?php esc_html_e( 'Privacy Policy', 'hospital-management' ); ?></li>
-                            	<li><?php esc_html_e( 'Contact Us', 'hospital-management' ); ?></li>
-                            </ul>
-                        </aside>
-                    <?php endif; ?>
-		        </div>
-		        <div class="col-lg-3 col-md-3 col-sm-6 col-12">
-		            <?php if (is_active_sidebar('hospital-management-footer4')) : ?>
-                        <?php dynamic_sidebar('hospital-management-footer4'); ?>
-                    <?php else : ?>
-                        <aside id="pages" class="widget">
-                            <h5 class="widget-title"><?php esc_html_e( 'Get In Touch', 'hospital-management' ); ?></h5>
-                            <ul class="mt-4">
-                            	<li><?php esc_html_e( 'Via Carlo Montù 78', 'hospital-management' ); ?><br><?php esc_html_e( '22021 Bellagio CO, Italy', 'hospital-management' ); ?></li>
-                            	<li><?php esc_html_e( '+11 6254 7855', 'hospital-management' ); ?></li>
-                            	<li><?php esc_html_e( 'support@example.com', 'hospital-management' ); ?></li>
-                            </ul>
-                        </aside>
-                    <?php endif; ?>
-		        </div>
+    	<div class="footer-column" style="border-bottom: 0px solid #fff">
+	      	<div class="row py-5">
+	      	    <div class="col-lg-4 col-md-6 mb-4">
+	      	        <h5 class="widget-title mb-3"><?php esc_html_e( 'About Hospital', 'hospital-management' ); ?></h5>
+	      	        <p><?php esc_html_e( 'RSUD Sumbawa is committed to providing excellent healthcare services with modern facilities and a compassionate staff. Dedicated to serving the community’s health needs with professionalism and care.', 'hospital-management' ); ?></p>
+	      	        <div class="footer-logo mt-3">
+	      	            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer-logo.png" alt="Hospital Logo" style="max-width:120px;">
+	      	        </div>
+	      	    </div>
+	      	    <div class="col-lg-2 col-md-6 mb-4">
+	      	        <h5 class="widget-title mb-3"><?php esc_html_e( 'Quick Links', 'hospital-management' ); ?></h5>
+	      	        <ul class="footer-links list-unstyled">
+	      	            <li><a href="<?php echo home_url(); ?>"><?php esc_html_e( 'Home', 'hospital-management' ); ?></a></li>
+	      	            <li><a href="<?php echo home_url('/about-us'); ?>"><?php esc_html_e( 'About Us', 'hospital-management' ); ?></a></li>
+	      	            <li><a href="<?php echo home_url('/services'); ?>"><?php esc_html_e( 'Services', 'hospital-management' ); ?></a></li>
+	      	            <li><a href="<?php echo home_url('/contact'); ?>"><?php esc_html_e( 'Contact', 'hospital-management' ); ?></a></li>
+	      	        </ul>
+	      	    </div>
+	      	    <div class="col-lg-3 col-md-6 mb-4">
+	      	        <h5 class="widget-title mb-3"><?php esc_html_e( 'Contact Info', 'hospital-management' ); ?></h5>
+	      	        <ul class="contact-info list-unstyled">
+	      	            <li><i class="fa fa-map-marker"></i> <?php esc_html_e( 'Jl. Sudirman No.6, Sumbawa Besar', 'hospital-management' ); ?></li>
+	      	            <li><i class="fa fa-phone"></i> <a href="tel:+6237162219">(+62) 371 62219</a></li>
+	      	            <li><i class="fa fa-envelope"></i> <a href="mailto:info@rsudsumbawa.com">info@rsudsumbawa.com</a></li>
+	      	        </ul>
+	      	        <div class="footer-social mt-3">
+	      	            <a href="https://facebook.com" class="me-2"><i class="fab fa-facebook-f"></i></a>
+	      	            <a href="https://instagram.com" class="me-2"><i class="fab fa-instagram"></i></a>
+	      	            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+	      	        </div>
+	      	    </div>
+	      	    <div class="col-lg-3 col-md-6 mb-4">
+	      	        <h5 class="widget-title mb-3"><?php esc_html_e( 'Opening Hours', 'hospital-management' ); ?></h5>
+	      	        <ul class="opening-hours list-unstyled">
+	      	            <li><?php esc_html_e( 'Monday - Friday:', 'hospital-management' ); ?> <span>07:00 - 20:00</span></li>
+	      	            <li><?php esc_html_e( 'Saturday:', 'hospital-management' ); ?> <span>08:00 - 14:00</span></li>
+	      	            <li><?php esc_html_e( 'Sunday:', 'hospital-management' ); ?> <span><?php esc_html_e( 'Closed', 'hospital-management' ); ?></span></li>
+	      	        </ul>
+	      	        <!-- <div class="newsletter mt-3">
+	      	            <form action="#" method="post">
+	      	                <label for="footer-newsletter" class="form-label"><?php esc_html_e( 'Subscribe to our Newsletter:', 'hospital-management' ); ?></label>
+	      	                <div class="input-group">
+	      	                    <input type="email" id="footer-newsletter" name="footer-newsletter" class="form-control" placeholder="<?php esc_attr_e( 'Email address', 'hospital-management' ); ?>" required>
+	      	                    <button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i></button>
+	      	                </div>
+	      	            </form>
+	      	        </div> -->
+	      	    </div>
+	      	</div>
+	      	<div class="footer-bottom text-center border-top pt-3 pb-1">
+	      	    <p class="mb-0">
+	      	        &copy; <?php echo date('Y'); ?> RSUD Sumbawa. <?php esc_html_e( 'All Rights Reserved.', 'hospital-management' ); ?>
+	      	    </p>
 	      	</div>
 		</div>
-    	<?php if (get_theme_mod('hospital_management_show_hide_copyright', true)) {?>
-	        <div class="site-info">
-	            <div class="footer-menu-left text-center">
-	            	<?php  if( ! get_theme_mod('hospital_management_footer_text_setting') ){ ?>
-					    <a target="_blank" href="<?php echo esc_url('https://wordpress.org/'); ?>">
-							<?php
-							/* translators: %s: CMS name, i.e. WordPress. */
-							printf( esc_html__( 'Proudly powered by %s', 'hospital-management' ), 'WordPress' );
-							?>
-					    </a>
-					    <span class="sep mr-1"> | </span>
-
-					    <span>
-                            <a href="<?php echo esc_url('https://www.themagnifico.net/products/free-hospital-wordpress-theme'); ?>">
-				              	<?php
-				                /* translators: 1: Theme name,  */
-				                printf( esc_html__( ' %1$s ', 'hospital-management' ),'Hospital WordPress Theme' );
-				              	?>
-			              	</a>
-				          	<?php
-				              /* translators: 1: Theme author. */
-				              printf( esc_html__( 'by %1$s.', 'hospital-management' ),'TheMagnifico'  );
-				            ?>
-
-	        			</span>
-					<?php }?>
-					<?php echo esc_html(get_theme_mod('hospital_management_footer_text_setting')); ?>
-	            </div>
-	        </div>
-		<?php } ?>
-	    <?php if(get_theme_mod('hospital_management_scroll_hide',true)){ ?>
-	    	<a href="#" id="button"><?php esc_html_e('TOP','hospital-management'); ?></a>
-	    <?php } ?>
     </div>
 </footer>
 </div>
@@ -113,6 +75,10 @@
 <script>
 var lastScrollTop = 0;
 var navbar = document.querySelector(".main-header"); // Ganti dengan class header Anda
+// Ambil semua elemen anchor di dalam .main-navigation .menu li dan simpan ke dalam variabel
+// Untuk mengubah warna semua elemen dalam NodeList, gunakan loop seperti forEach:
+var menuLinks = document.querySelectorAll('.main-navigation .menu li a');
+
 
 window.addEventListener("scroll", function() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -120,10 +86,10 @@ window.addEventListener("scroll", function() {
   if (scrollTop > lastScrollTop) {
     // Scroll ke bawah
     navbar.classList.add("header-hidden");
-  } else {
-    // Scroll ke atas
+} else {
+	// Scroll ke atas
     if (scrollTop === 0) {
-      navbar.classList.remove("header-hidden");
+		navbar.classList.remove("header-hidden");
     } else {
       navbar.classList.add("header-hidden");
     }
