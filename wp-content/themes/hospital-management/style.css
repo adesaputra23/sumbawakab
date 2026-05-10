@@ -256,7 +256,7 @@ textarea {
 --------------------------------------------------------------*/
 
 :root {
-  --first-color: #0088FF;
+  --first-color: #003049;
 }
 
 .content-area .site-main article header.entry-header img{
@@ -368,7 +368,7 @@ a#button{
 --------------------------------------------------------------*/
 
 .top-info {
-  background: #00923f;
+  background: #003049;
 }
 .top-info .social-link {
   text-align: left;
@@ -1089,11 +1089,11 @@ nav#site-navigation{
   padding: 0;
 }
 .main-navigation ul.sub-menu li a{
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 .main-navigation ul.sub-menu > li > a:hover, .main-navigation ul.sub-menu > li > a:focus{
-  background: #3F3C6C;
-  color: #ffffff !important;
+  background: #aeadc5;
+  color: #000000 !important;
 }
 .main-navigation .menu {
   display: inline-block;
@@ -1116,7 +1116,7 @@ nav#site-navigation{
   color: var(--first-color);
 }
 .main-navigation .sub-menu {
-  background-color: #00923f;
+  background-color: #F4FAFF;
   list-style: none;
   padding-left: 0;
   position: absolute;
