@@ -1,0 +1,1 @@
+[2026-05-08 03:29:45] [WARNING] Token expiration detected - sending warning email | Context: {"account_id":"26829609043347621","days_until_expiration":60,"expiration_date":"July 7, 2026","username":""}

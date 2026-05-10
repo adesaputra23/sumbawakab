@@ -1,0 +1,8 @@
+[2026-05-08 03:29:45] [INFO] Email sending attempt | Context: {"type":"expiration_warning","recipient":"ahmad.juliansyah@uts.ac.id","subject":"\ud83d\udcc5 Reminder: Instagram Token Expires in 60 Days"}
+[2026-05-08 03:29:45] [WARNING] Email sending attempt failed | Context: {"type":"expiration_warning","recipient":"ahmad.juliansyah@uts.ac.id","attempt":1,"max_retries":3,"will_retry":true}
+[2026-05-08 03:29:45] [INFO] Email retry attempt | Context: {"type":"expiration_warning","recipient":"ahmad.juliansyah@uts.ac.id","attempt":2,"max_retries":3}
+[2026-05-08 03:29:50] [WARNING] Email sending attempt failed | Context: {"type":"expiration_warning","recipient":"ahmad.juliansyah@uts.ac.id","attempt":2,"max_retries":3,"will_retry":true}
+[2026-05-08 03:29:50] [INFO] Email retry attempt | Context: {"type":"expiration_warning","recipient":"ahmad.juliansyah@uts.ac.id","attempt":3,"max_retries":3}
+[2026-05-08 03:29:55] [WARNING] Email sending attempt failed | Context: {"type":"expiration_warning","recipient":"ahmad.juliansyah@uts.ac.id","attempt":3,"max_retries":3,"will_retry":false}
+[2026-05-08 03:29:55] [ERROR] Email sending failed | Context: {"type":"expiration_warning","recipient":"ahmad.juliansyah@uts.ac.id","error":"All 3 email sending attempts failed"}
+[2026-05-08 03:29:55] [ERROR] Email sending completely failed after all retries | Context: {"type":"expiration_warning","recipient":"ahmad.juliansyah@uts.ac.id","total_attempts":3,"retry_delay":5}

@@ -1,0 +1,2 @@
+[2026-05-08 03:29:43] [INFO] send_expiration_mail function called | Context: {"account_id":"26829609043347621"}
+[2026-05-08 03:29:55] [INFO] send_expiration_mail function completed | Context: {"account_id":"26829609043347621"}

@@ -1,0 +1,2 @@
+[2026-05-08 03:29:43] [INFO] Token renewal process started | Context: {"account_id":"26829609043347621","current_expiration":1783394981,"username":""}
+[2026-05-08 03:29:43] [INFO] Token expiration analysis | Context: {"account_id":"26829609043347621","current_timestamp":1778210983,"expiration_timestamp":1783394981,"days_until_expiration":60,"expiration_date_formatted":"July 7, 2026"}
